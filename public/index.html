@@ -17,7 +17,6 @@
             --primary-dark: #6930e0;
             --input-bg: #ffffff;
         }
-
         body.dark {
             --bg: #0f1117;
             --text: #f1f1f1;
@@ -28,22 +27,18 @@
             --primary-dark: #8365ff;
             --input-bg: #161925;
         }
-
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
             background: var(--bg);
             color: var(--text);
         }
-
         html {
             box-sizing: border-box;
         }
-
         *, *:before, *:after {
             box-sizing: inherit;
         }
-
         .main-hero {
             min-height: 100vh;
             display: flex;
@@ -51,7 +46,6 @@
             align-items: center;
             padding: 40px 16px 0;
         }
-
         /* navbar*/
         .logo-row {
             width: 100%;
@@ -62,40 +56,33 @@
             flex-wrap: wrap;
             gap: 16px;
         }
-
         .logo {
             font-size: 1.6rem;
             font-weight: 700;
             letter-spacing: -1px;
         }
-
         .nav-links {
             display: flex;
             gap: 24px;
             flex-wrap: wrap;
         }
-
         .nav-links a {
             text-decoration: none;
             color: var(--text);
         }
-
         .nav-links a:hover {
             color: var(--primary);
         }
-
         .auth-links {
             display: flex;
             gap: 16px;
             align-items: center;
             flex-wrap: wrap;
         }
-
         .auth-links a {
             text-decoration: none;
             color: var(--text);
         }
-
         .get-started {
             background: #111;
             color: #fff;
@@ -104,11 +91,9 @@
             padding: 8px 16px;
             cursor: pointer;
         }
-
         .get-started:hover {
             background: var(--primary);
         }
-
         /* hero section */
         .hero-content {
             position: relative;
@@ -122,7 +107,6 @@
             margin-top: 40px;
             overflow: hidden;
         }
-
         .hero-content::before {
             content: '';
             position: absolute;
@@ -134,18 +118,15 @@
             border-radius: 50%;
             z-index: 0;
         }
-
         .hero-content * {
             position: relative;
             z-index: 1;
         }
-
         .hero-title {
             font-size: 3.5rem;
             line-height: 1.35;
             margin-bottom: 16px;
         }
-
         .highlight {
             color: var(--primary);
             background: rgba(155, 123, 255, 0.15);
@@ -153,14 +134,12 @@
             border-radius: 6px;
             text-decoration: underline 0.18em var(--primary);
         }
-
         .hero-sub {
             max-width: 800px;
             margin: 0 auto 40px;
             color: var(--muted);
             font-size: 1.15rem;
         }
-
         /* user input */
         .hero-actions {
             display: flex;
@@ -168,7 +147,6 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-
         .idea-input {
             width: 320px;
             max-width: 90vw;
@@ -179,17 +157,14 @@
             color: var(--text);
             font-size: 1.05rem;
         }
-
         .idea-input::placeholder {
             color: var(--muted);
         }
-
         .idea-input:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(122, 60, 255, 0.25);
         }
-
         .ai-btn {
             padding: 14px 26px;
             font-size: 1.05rem;
@@ -201,17 +176,14 @@
             cursor: pointer;
             min-width: 160px;
         }
-
         .ai-btn:hover {
             background: var(--primary-dark);
         }
-
         .try-note {
             margin-top: 10px;
             font-size: 0.85rem;
             color: var(--muted);
         }
-
         /* ai output */
         .ai-response {
             display: none;
@@ -230,73 +202,60 @@
             scrollbar-width: thin;
             scrollbar-color: var(--primary-dark) var(--card);
         }
-
         .ai-response::-webkit-scrollbar {
             width: 6px;
         }
-
         .ai-response::-webkit-scrollbar-track {
             background: var(--card);
             border-radius: 6px;
         }
-
         .ai-response::-webkit-scrollbar-thumb {
             background-color: var(--primary-dark);
             border-radius: 6px;
             border: 2px solid var(--card);
         }
-
         .ai-response::-webkit-scrollbar-thumb:hover {
             background-color: var(--primary);
         }
-
         @keyframes fadeSlide {
             from {
                 opacity: 0;
                 transform: translateY(6px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         @media (max-width: 900px) {
             .logo-row {
                 flex-direction: column;
                 align-items: center;
                 gap: 10px;
             }
-
             .nav-links,
             .auth-links {
                 justify-content: center;
                 width: 100%;
                 gap: 18px;
             }
-
             .nav-links {
                 margin-bottom: 6px;
             }
         }
-
         @media (max-width: 900px) {
             .hero-title {
                 font-size: 2.6rem;
             }
-
             .hero-sub {
                 font-size: 1.05rem;
                 padding: 0 12px;
             }
-
             .hero-actions {
                 flex-direction: column;
                 gap: 12px;
                 align-items: center;
             }
-
             .ai-btn,
             .idea-input {
                 width: 100%;
@@ -305,34 +264,27 @@
                 display: block;
                 text-align: center;
             }
-
             .try-note {
                 text-align: center;
             }
-
             .ai-response {
                 margin-left: auto;
                 margin-right: auto;
             }
         }
-
         @media (max-width: 500px) {
             .hero-title {
                 font-size: 2.2rem;
             }
-
             .hero-sub {
                 font-size: 0.95rem;
             }
-
             .main-hero {
                 padding: 20px 4px 0;
             }
-
             .ai-response {
                 width: 98%;
             }
-
             .idea-input,
             .ai-btn {
                 max-width: 98vw;
